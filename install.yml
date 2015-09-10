@@ -1,6 +1,7 @@
 ---
  - hosts: web
-   remote_user: root
+   remote_user: ubuntu
+   sudo: yes
    vars:
     nginx: true
     hhvm_start: true

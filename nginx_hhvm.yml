@@ -2,7 +2,8 @@
 - name: Nginx and HHVM
 
   hosts: web
-  remote_user: root
+  remote_user: ubuntu
+  sudo: yes
   vars:
     hhvm: true
     hhvm_start: true
