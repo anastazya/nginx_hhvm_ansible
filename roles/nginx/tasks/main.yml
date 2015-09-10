@@ -27,6 +27,6 @@
         group=root
         state=link
 
-- name: Start Nginx
+- name: Start Nginx Server
   service: name=nginx state=started
   when: nginx is defined
