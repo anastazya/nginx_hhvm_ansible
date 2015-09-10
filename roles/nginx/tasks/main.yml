@@ -27,5 +27,6 @@
         group=root
         state=link
 
-  notify: start nginx
-  when: hhvm is defined
+- name: Start Nginx
+  service: name=nginx state=started
+  when: nginx is defined
