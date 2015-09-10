@@ -3,14 +3,14 @@
 - name: apt-get update
   command: apt-get update 
 
-# - name: apt-get upgrade
-# command: apt-get -y upgrade 
-
 - name: install python-apt (required to ansible apt module)
   command: apt-get install python-apt software-properties-common -y 
 
 - name: Update Apt
   apt: update_cache=yes
+
+- name: Upgrade ( This is going to take a LONG time !)
+  apt: upgrade=dist update_cache=yes dpkg_options='force-confold,force-confdef'
 
 - name: Generate locale
   locale_gen: name="en_US.UTF-8" state=present
