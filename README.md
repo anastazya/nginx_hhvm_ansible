@@ -1,1 +1,2 @@
-# nginx_hhvm_ansible
+# Install HHVM + Nginx on Ubuntu 14.04 LTS
+# Works , but improvements and sugestions are welcome 
