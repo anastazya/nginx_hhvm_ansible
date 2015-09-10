@@ -44,7 +44,6 @@
   - curl
   - git-core
   - wget
-  - python-mysqldb # used for handling MariaDB from Ansible
 
 - name: Add {{ remote_deploy_group }} group
   group:
