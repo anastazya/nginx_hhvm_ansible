@@ -1,6 +1,8 @@
 # {{ ansible_managed }}
 
 server {
+    listen 80;
+    server_name  {{ servername }};
     root {{ remote_dir }};
 
     index index.php index.html;
