@@ -1,0 +1,6 @@
+# role: common
+remote_deploy_user: deployment
+remote_deploy_group: deployment
+remote_deploy_home: /home/deployment/
+ssh_key_pub_path: ~/.ssh/id_rsa.pub
+remote_dir: /var/www/html/

@@ -1,0 +1,8 @@
+---
+
+- name: Stop Nginx
+  service: name=nginx state=stopped
+
+- name: Stop HHVM
+  service: name=hhvm state=stopped
+

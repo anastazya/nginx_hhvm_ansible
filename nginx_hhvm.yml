@@ -1,0 +1,14 @@
+---
+- name: Nginx and HHVM
+
+  hosts: web
+  remote_user: root
+  vars:
+    hhvm: true
+    hhvm_start: true
+
+  roles:
+    - reset-all-configs
+    - hhvm
+    - nginx
+

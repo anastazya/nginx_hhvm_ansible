@@ -1,0 +1,19 @@
+; {{ ansible_managed }}
+
+; php options
+session.save_handler = files
+session.save_path = /var/lib/php5
+session.gc_maxlifetime = 1440
+max_execution_time = 3600
+max_input_time = 300
+memory_limit = 2048M
+post_max_size = 1G
+upload_max_filesize = 1G
+
+; hhvm specific
+hhvm.log.level = Info
+;hhvm.log.always_log_unhandled_exceptions = true
+;hhvm.log.runtime_error_reporting_level = 8191
+hhvm.mysql.typed_results = false
+post_max_size = 1G
+upload_max_size = 1G

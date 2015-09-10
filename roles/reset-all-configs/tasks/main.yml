@@ -1,0 +1,7 @@
+---
+
+- name: Reset Nginx enabled sites
+  shell: rm -rf /etc/nginx/sites-enabled/*
+
+- name: Stop services
+  include: stop-services.yml
