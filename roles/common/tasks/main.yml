@@ -3,6 +3,9 @@
 - name: apt-get update
   command: apt-get update 
 
+# - name: apt-get upgrade
+# command: apt-get -y upgrade 
+
 - name: install python-apt (required to ansible apt module)
   command: apt-get install python-apt software-properties-common -y 
 
